@@ -487,9 +487,6 @@ section {
 .about .content p {
   margin-bottom: 0;
 }
-.section-about {
-  justify-content: left;
-}
 .section-about h2 {
   font-size: 32px;
   font-weight: 700;
@@ -503,7 +500,12 @@ section {
 .about {
   margin-bottom: 5px
 }
-
+.section-about {
+  margin-left: 25px;
+}
+.section-aboutRight {
+  margin-left: 15%;
+}
 .section-about p {
 
   margin-bottom: 0;
@@ -513,58 +515,19 @@ section {
   text-transform: uppercase;
   color: #000000;
 }
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-#sponsors {
-  padding: 40px 0;
-}
-.sponsors {
-  margin-bottom: 5px;
-}
-.sponsors .owl-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
+.right {
+  margin-left: 10%;
 }
 
-.sponsors .owl-item img {
-  width: 60%;
-  opacity: 0.5;
-  transition: 0.3s;
-  filter: grayscale(100);
-}
 
-.sponsors .owl-item img:hover {
-  opacity: 1;
-  filter: none;
-}
 
-.sponsors .owl-nav, .sponsors .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.sponsors .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.sponsors .owl-dot.active {
-  background-color: #e03a3c !important;
-}
 
 /*--------------------------------------------------------------
 # My Resume
 --------------------------------------------------------------*/
 .section-resume {
   justify-content: left;
+  margin-left: 10%;
 }
 .section-resume h2 {
   font-size: 32px;
@@ -577,7 +540,8 @@ section {
   z-index: 2;
 }
 .resume {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  padding: 40px 0;
 }
 
 .section-resume p {
@@ -589,18 +553,168 @@ section {
   text-transform: uppercase;
   color: #000000;
 }
-#foto{
-  margin-left: 30%
-
+.non-member {
+  background:#669900 url('https://dl.dropbox.com/s/0lp84022c903070/1wd-black-circle-background-transparent-45-angle.png') no-repeat top left;
+  padding: 10px 15px 0;
+  font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ justify-content: center;
 }
-.toph{
-  margin-top: -90px;
+.section-aboutRight{
+  margin-left: 20%;
+}
+#text {
+  justify-content: center;
+}
+.headline {
+  font-size:45px;
+  display:block;
+  clear:both;
+  color:#FFF;
+  font-weight:800;
+  text-transform:uppercase;
+  line-height:1em;
+}
+.sub-headline {
+  font-size:24px;
+  font-weight:800;
+  display:block;
+  clear:both;
+  color:#273B00;
+  text-transform:uppercase;
 }
 
-.resume  {
+.button {
+  justify-content: center;
+  display:block;
+  clear:both;
+  margin-top:30px;
+}
+
+.btn-yellow {
+    color: #eee;
+    background-color: transparent;
+    border-color: white;
+    text-transform:uppercase;
+}
+
+.btn-wide {
+  padding:10px 30px;
+}
+
+#button {
+  margin-bottom:15px;
+}
+
+#text {
+  color:#FFF;
+}
+#text-button-wrapper {
+  display:block;
+  min-height:200px;
+  text-align:center;
+  padding-top:15px;
+}
+
+@media (max-width: 768px) { 
+  .button {
+    margin-top:10px;
+  }
+  #button {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 998px) { 
+  .headline {
+    font-size:40px;
+  }
+}
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+  padding: 80px 0;
+  background-color: rgb(243, 243, 0);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+/* 
+@media (min-width: 1024px) {
+  .testimonials {
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
+}
+ */
+
+
+.card{
+  margin: 6% 0%;
+}
+
+.card-body{
+  margin: 0% 0% 0% 3%;
+  padding: 1% 0%;
+}
+.card{
+	background: #fff;
+	border-radius: 2px;
+	
+	position: relative;
+	margin-bottom: 10px;
+	overflow:hidden;
+}
+.card{
+	box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	background: none repeat scroll 0 0 #ffffff;
+}
+.card:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card h4 p {
+  background-color: black;
+}
+.card-img-top {
+  overflow: hidden;
+}
+
+
+
+/*--------------------------------------------------------------
+# My Portfolio
+--------------------------------------------------------------*/
+#portfolio {
+  width: 100%;
+  background: url(../img/Background.jpg) top right;
+  background-size: cover;
+  position: relative;
+}
+.portfolio  {
   list-style: none;
   margin-bottom: 20px;
 }
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+#portfolio:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -750,183 +864,6 @@ section {
 
 
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials {
-  padding: 80px 0;
-  background: url("../img/g.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-
-.testimonials::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(14, 16, 17, 0.7);
-}
-
-.testimonials .section-header {
-  margin-bottom: 40px;
-}
-
-.testimonials .testimonial-item {
-  text-align: center;
-  color: #fff;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
-  border: 6px solid rgba(255, 255, 255, 0.15);
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #fff;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #ddd;
-  margin: 0 0 15px 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-  color: #eee;
-}
-
-.testimonials .owl-nav, .testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.4) !important;
-}
-
-.testimonials .owl-dot.active {
-  background-color: #ffb727 !important;
-}
-
-@media (min-width: 1024px) {
-  .testimonials {
-    background-attachment: fixed;
-  }
-}
-
-@media (min-width: 992px) {
-  .testimonials .testimonial-item p {
-    width: 80%;
-  }
-}
-
-/*--------------------------------------------------------------
-# My Portfolio
---------------------------------------------------------------*/
-.portfolio  {
-  list-style: none;
-  margin-bottom: 20px;
-}
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.resume .resume-item .resume-img {
-  overflow: hidden;
-}
-
-.resume .resume-item .resume-img img {
-  transition: all 0.8s ease-in-out;
-}
-
-.resume .resume-item .resume-info {
-  opacity: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 0;
-  z-index: 3;
-  right: 15px;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-}
-
-.resume .resume-item .resume-info h4 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 0px;
-}
-
-.resume .resume-item .resume-info p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.resume .resume-item .portfolio-info .preview-link, .resume .resume-item .resume-info .resume-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #fff;
-  transition: 0.3s;
-}
-
-.resume .resume-item .resume-info .preview-link:hover, .resume .resume-item .resume-info .details-link:hover {
-  color: #ffc041;
-}
-
-.resume .resume-item .resume-info .details-link {
-  right: 10px;
-}
-
-.resume .resume-item:hover .resume-img img {
-  transform: scale(1.2);
-}
-
-.resume .resume-item:hover .resume-info {
-  opacity: 1;
-}
-
-.resume-details {
-  padding-top: 30px;
-}
 
 
 
