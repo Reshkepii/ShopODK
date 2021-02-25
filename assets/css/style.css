@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* html {
+  overflow-x:hidden ;
+} */
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -381,33 +384,37 @@ section {
   text-align: center;
   padding: 30px 0;
   position: relative;
+  
 }
 
 .section-title h2 {
-  font-size: 32px;
+  
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 20px;
   padding-bottom: 0;
   color: #000000;
-  position: relative;
-  z-index: 2;
+
+  background-color: white;
+  width: 50%;
+    margin-left: 25%;
+    margin-bottom: 0;
+
 }
 
 
 .section-title p {
-
+  color: #000000;
   margin-bottom: 0;
   position: relative;
   z-index: 2;
   font-weight: 600;
   text-transform: uppercase;
+  background-color: white
 }
 
 @media (max-width: 575px) {
   .section-title h2 {
     font-size: 28px;
-    margin-bottom: 15px;
   }
   .section-title span {
     font-size: 38px;
@@ -477,10 +484,14 @@ section {
 /*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
+.about {
+  margin-bottom: 10px;
+  color: #eceae5;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #3b434a;
+  
   text-transform: uppercase;
 }
 
@@ -497,15 +508,10 @@ section {
   position: relative;
   z-index: 2;
 }
-.about {
-  margin-bottom: 5px
-}
 .section-about {
   margin-left: 25px;
 }
-.section-aboutRight {
-  margin-left: 15%;
-}
+
 .section-about p {
 
   margin-bottom: 0;
@@ -515,11 +521,6 @@ section {
   text-transform: uppercase;
   color: #000000;
 }
-.right {
-  margin-left: 10%;
-}
-
-
 
 
 /*--------------------------------------------------------------
@@ -530,18 +531,16 @@ section {
   margin-left: 10%;
 }
 .section-resume h2 {
-  font-size: 32px;
+
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
   color: #000000;
-  position: relative;
-  z-index: 2;
 }
 .resume {
-  margin-bottom: 20px;
-  padding: 40px 0;
+  background-color: white;
+  padding: 20px 0;
 }
 
 .section-resume p {
@@ -566,7 +565,7 @@ section {
   justify-content: center;
 }
 .headline {
-  font-size:45px;
+  font-size:35px;
   display:block;
   clear:both;
   color:#FFF;
@@ -575,6 +574,7 @@ section {
   line-height:1em;
 }
 .sub-headline {
+  margin-top: 5px;
   font-size:24px;
   font-weight:800;
   display:block;
@@ -629,18 +629,32 @@ section {
     font-size:40px;
   }
 }
+
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background-color: rgb(243, 243, 0);
-  background-position: center center;
+  background-color:#eceae5;
+  margin-bottom:20px;
+  /* background-position: center center;
   background-size: cover;
-  position: relative;
+  position: relative; */
+}
+.section-testimonials {
+  justify-content: left;
+  margin-left: 10%;
+  margin-top: 15%;  
+  
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #000000;
+
 }
 
-/* 
 @media (min-width: 1024px) {
   .testimonials {
     background-attachment: fixed;
@@ -652,40 +666,30 @@ section {
     width: 80%;
   }
 }
- */
-
-
-.card{
-  margin: 6% 0%;
-}
-
-.card-body{
-  margin: 0% 0% 0% 3%;
-  padding: 1% 0%;
-}
-.card{
-	background: #fff;
-	border-radius: 2px;
-	
-	position: relative;
-	margin-bottom: 10px;
-	overflow:hidden;
-}
-.card{
-	box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	background: none repeat scroll 0 0 #ffffff;
-}
-.card:hover{
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.card h4 p {
-  background-color: black;
-}
-.card-img-top {
+.now-card {
+  max-width: 300px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
   overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  margin: 0;
 }
-
+.now-card img {
+  height: auto;
+  width: 100%;
+}
+.now-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.para {
+  margin-top: -15%;
+  margin-left: 40%;
+}
+.dyta {
+  margin-top: -15%;
+}
 
 
 /*--------------------------------------------------------------
@@ -699,7 +703,6 @@ section {
 }
 .portfolio  {
   list-style: none;
-  margin-bottom: 20px;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -707,14 +710,16 @@ section {
 
 #portfolio:before {
   content: "";
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.45);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
-
+.portfolio-row {
+  justify-content: center;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -871,9 +876,7 @@ section {
 /*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
-#mid {
-  margin-left: 150px
-}
+
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -894,6 +897,16 @@ section {
   color: #777777;
   font-weight: 700;
   margin: 10px 0;
+}
+.section-contact {
+  text-align: center;
+}
+.section-contact h2 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #000000;
 }
 
 .contact .info-box p {
