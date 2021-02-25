@@ -8,9 +8,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* html {
-  overflow-x:hidden ;
-} */
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -401,7 +398,6 @@ section {
 
 }
 
-
 .section-title p {
   color: #000000;
   margin-bottom: 0;
@@ -498,6 +494,7 @@ section {
 .about .content p {
   margin-bottom: 0;
 }
+
 .section-about h2 {
   font-size: 32px;
   font-weight: 700;
@@ -508,6 +505,7 @@ section {
   position: relative;
   z-index: 2;
 }
+
 .section-about {
   margin-left: 25px;
 }
@@ -530,6 +528,7 @@ section {
   justify-content: left;
   margin-left: 10%;
 }
+
 .section-resume h2 {
 
   font-weight: 700;
@@ -538,6 +537,7 @@ section {
   padding-bottom: 0;
   color: #000000;
 }
+
 .resume {
   background-color: white;
   padding: 20px 0;
@@ -552,18 +552,22 @@ section {
   text-transform: uppercase;
   color: #000000;
 }
+
 .non-member {
   background:#669900 url('https://dl.dropbox.com/s/0lp84022c903070/1wd-black-circle-background-transparent-45-angle.png') no-repeat top left;
   padding: 10px 15px 0;
   font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
  justify-content: center;
 }
+
 .section-aboutRight{
   margin-left: 20%;
 }
+
 #text {
   justify-content: center;
 }
+
 .headline {
   font-size:35px;
   display:block;
@@ -573,6 +577,7 @@ section {
   text-transform:uppercase;
   line-height:1em;
 }
+
 .sub-headline {
   margin-top: 5px;
   font-size:24px;
@@ -608,6 +613,7 @@ section {
 #text {
   color:#FFF;
 }
+
 #text-button-wrapper {
   display:block;
   min-height:200px;
@@ -642,6 +648,7 @@ section {
   background-size: cover;
   position: relative; */
 }
+
 .section-testimonials {
   justify-content: left;
   margin-left: 10%;
@@ -666,6 +673,7 @@ section {
     width: 80%;
   }
 }
+
 .now-card {
   max-width: 300px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
@@ -676,17 +684,21 @@ section {
   cursor: pointer;
   margin: 0;
 }
+
 .now-card img {
   height: auto;
   width: 100%;
 }
+
 .now-card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
 .para {
   margin-top: -15%;
   margin-left: 40%;
 }
+
 .dyta {
   margin-top: -15%;
 }
@@ -701,9 +713,11 @@ section {
   background-size: cover;
   position: relative;
 }
+
 .portfolio  {
   list-style: none;
 }
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -717,9 +731,11 @@ section {
   left: 0;
   right: 0;
 }
+
 .portfolio-row {
   justify-content: center;
 }
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -867,12 +883,6 @@ section {
   }
 }
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
@@ -898,9 +908,11 @@ section {
   font-weight: 700;
   margin: 10px 0;
 }
+
 .section-contact {
   text-align: center;
 }
+
 .section-contact h2 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
